@@ -5,7 +5,7 @@ class CongressController < ApplicationController
 
     uri = URI.parse("https://api.propublica.org/congress/v1/114/house/bills/introduced.json")
     request = Net::HTTP::Get.new(uri)
-    request["X-Api-Key"] = "y3spXskaU43BBv4WCh6BazYtzVOToHf1ZUhTiiQc"
+    request["X-Api-Key"] = "apikey"
 
     req_options = {
       use_ssl: uri.scheme == "https",
